@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    font-size: 5rem;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+}
+.box1{
+    width: 55%;
+}
+.box{
+    width: 70%;
+    padding: 2rem;
+    padding-right: 15vw;
+    margin: auto;
+}
+.box11{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    margin-bottom: 10rem;
+}
+.box12 h1 span{
+    font-weight: 100;
+    color: palevioletred;
+}
+.dot{
+    margin-right: 10px;
+    height: 2rem;
+    border-radius: 50%;
+    width: 2rem;
+    border: 3px solid palevioletred;
+}
+.box12 p{
+    margin: 2rem 0rem;
+    color: palevioletred;
+}
+.box13{
+    margin: 30px 0px;
+    position: relative;
+    width: 100%;
+}
+input{
+    border: 2px solid palevioletred;
+    outline: none;
+    font-size: 20px;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+button{
+    border-radius: 25px;
+    background-color: palevioletred;
+    border: none;
+    outline: none;
+    padding: 12px 30px;
+    color: white;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.box2{
+    background: url(bg.jpeg) no-repeat center center/cover;
+    height: 100%;
+    width: 45%;
+}
+@media screen and (max-width:1380px){
+    .box{
+        padding-right: 7vw;
+    }
+}
+@media screen and (max-width:1000px){
+    h1{
+        font-size: 4rem;
+    }
+    .box{
+        padding-right: 4vw;
+    }
+    input{
+        font-size: 15px;
+    }
+    button{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:800px){
+    h1{
+        font-size: 3rem;
+    }
+    .box{
+        width: 90%;
+        padding-right: 10vw;
+    }
+}
+@media screen and (max-width:650px){
+    .main{
+        flex-direction: column-reverse;
+    }
+    .box1{
+        width: 100%;
+    }
+    .box2{
+        margin-top: 3.5rem;
+        width: 100%;
+    }
+    .box{
+        width: 100%;
+        padding-right: 0;
+        padding: 2rem;
+        text-align: center;
+    }
+    .box11{
+        margin-bottom: 0;
+        position: absolute;
+        text-align: start;
+        top: 15px;
+    }
+}
